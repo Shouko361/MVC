@@ -1,0 +1,10 @@
+<h2 id="desc">Alterar publicação</h2>
+
+<form method="post" id="form-create" action="?pag=admin&metodo=update">
+    <span>Titulo</span> <br><br>
+    <input type="text" name="titulo" placeholder="Titulo" value="{{titulo}}"><br><br>
+    <span>Conteudo</span> <br><br>
+    <textarea name="conteudo"cols="30" rows="10" placeholder="Conteudo">{{conteudo}}</textarea><br><br>
+    <input type="hidden" name="id_post" value="{{id_post}}">
+    <input type="submit" value="Alterar">
+</form>

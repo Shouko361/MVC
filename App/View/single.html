@@ -1,0 +1,42 @@
+<section>
+
+    <h1 id="desc">{{ titulo }}</h1>
+
+        <article>
+            <header>
+                <h1>{{ titulo }}</h1>
+            </header>
+            <p>{{ conteudo }}</p>
+
+            <br>
+            <hr>
+            <br>
+
+            {% if comentario == false  %}
+                <h4 id="desc">Ainda não existem comentarios para essa postagem ainda!! </h4> 
+            {% else %}
+                {% for coment in comentario %}
+
+                    <h4>{{coment.nome}}</h4>
+                    <p>- {{coment.mensagem}}</p>
+                    <br>
+
+                {% endfor %}
+            {% endif %}
+
+            <hr><br><br>
+
+            <form action="http://localhost/MVC-main/?pag=post&metodo=addComent" method="post">
+                
+                <input type="text" name="nome" placeholder="Nome"><br><br>
+
+                <textarea name="msg" id="" cols="30" rows="10" placeholder="Comentario"></textarea><br><br>
+                <input type="hidden" name="id" value="{{ id }}">
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </article>
+
+
+</section>

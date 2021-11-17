@@ -1,0 +1,24 @@
+<h2 id="desc">Gerenciador de Conteudo</h2>
+<br><hr>
+<h4 id="desc">BemVindo!!</h4>
+
+<a href="http://localhost/MVC-main/?pag=admin&metodo=create">Criar nova publicação</a>
+<br><br><hr>
+
+<table border="3px">
+
+    <tr>
+        <th width="30px">ID</th>
+        <th width="400px" colspan="3">TITULO</th>
+    </tr>
+
+    {% for postagem in postagens %}
+        <tr>
+            <th>{{postagem.id_post}}</th>
+            <th>{{postagem.titulo}}</th>
+            <th><a href="http://localhost/MVC-main/?pag=admin&metodo=change&id={{postagem.id_post}}">Alterar</a></th>
+            <th><a href="http://localhost/MVC-main/?pag=admin&metodo=delete&id={{postagem.id_post}}">Deletar</a></th>
+        </tr>
+    {% endfor %}
+
+</table>

@@ -1,0 +1,18 @@
+<section>
+
+    <h1 id="desc">Nossas Postagens</h1>
+
+    {% for postagem in postagens %}
+
+        <article>
+            <header>
+                <!--Titulo-->
+                <h1><a href="http://localhost/MVC-main/?pag=post&id={{postagem.id_post}}">{{postagem.titulo}}</a></h1>
+            </header>
+            <!--Post-->
+            <p>{{postagem.conteudo}}</p>
+        </article>
+
+    {% endfor %}
+
+</section>

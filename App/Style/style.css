@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(36, 99, 194);
+}
+
+div#corpo{
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+div#top{
+    padding: 10px;
+}
+
+div#top a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: arial;
+    padding: 20px 20px;
+}
+
+.admin{
+    float: right;
+    padding: 20px;
+}
+
+
+div#top a:hover{
+    text-decoration: solid;
+    color: rgb(255, 0, 0);
+}
+
+hr{
+    height: 2px;
+    background-color: rgb(36, 99, 194);
+}
+
+h1#desc{
+    text-align: center;
+    font: 25px;
+    font-family: arial;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+h2#desc{
+    text-align: center;
+    font: 25px;
+    font-family: arial;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+h4#desc{
+    text-align: center;
+    font: 25px;
+    font-family: arial;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+div#conteudo{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+article{
+    margin-bottom: 20px;
+    font-family: arial;
+}
+
+article h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+article h1 a:hover{
+    text-decoration:underline;
+    color: rgb(36, 99, 194);
+}
+
+article p{
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-family: arial;
+}
+
+form#form-create{
+    text-align: center;
+    font: 25px;
+    font-family: arial;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+textarea{
+    font-family: arial;
+}
